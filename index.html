@@ -19,7 +19,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
+
 header {
   background-color: #666;
   padding: 30px;
@@ -28,16 +28,14 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
   width: 11%;
-  height: 200px; /* only for demonstration, should be removed */
+  height: 200px; 
   background: #ccc;
   padding: 20px;
 }
 
-/* Style the list inside the menu */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -48,7 +46,7 @@ article {
   padding: 20px;
   width: 83%;
   background-color: #f1f1f1;
-  height: 200px; /* only for demonstration, should be removed */
+  height: 200px; 
 }
 
 article1 {
@@ -56,17 +54,15 @@ article1 {
   padding: 20px;
   width: 100%;
   background-color: #f1f1f1;
-  height: 450px; /* only for demonstration, should be removed */
+  height: 450px; 
 }
 
-/* Clear floats after the columns */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
 footer {
   background-color: #777;
   padding: 10px;
@@ -74,7 +70,6 @@ footer {
   color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
