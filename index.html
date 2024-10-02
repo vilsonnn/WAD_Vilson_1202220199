@@ -1,140 +1,238 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-	CV Vilson
-</title>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Vilson</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<style>
-* {
-  box-sizing: border-box;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #d4b79d; /* Brown background */
+        }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
 
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
+        nav img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%; /* Circular image */
+        }
 
-nav {
-  float: left;
-  width: 11%;
-  height: 200px; 
-  background: #ccc;
-  padding: 20px;
-}
+        article {
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            background-color: #f1f1f1;
+            border-radius: 15px; /* Rounded corners */
+        }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            clear: both;
+        }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 83%;
-  background-color: #f1f1f1;
-  height: 200px; 
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
 
-article1 {
-  float: left;
-  padding: 20px;
-  width: 100%;
-  background-color: #f1f1f1;
-  height: 450px; 
-}
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
 
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        th {
+            background-color: #666;
+            color: white;
+        }
 
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
+        h1 {
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
 
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+        p {
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .bullet-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .portfolio-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            /* Center the button */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+
+        .portfolio-button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
+<body>
+
 <header>
-
-	<h1>CV Vilson</h1>
-
+    <h1>CV Vilson</h1>
 </header>
 
+<!-- Centered Photo -->
+<nav>
+    <img src="foto.png" alt="Foto Vilson">
+</nav>
+
 <section>
-  <nav>
-    <ul>
-		<img src="foto.png" style="width:130px;height:190px;">
-    </ul>
-  </nav>
-	<article>
-	<h1 style="font-size:25px;">Biodata</h1>
-	<p>Nama saya Vilson, aku asalnya dari kepri lebih tepatnya di pulau bintan, hobby saya adalah tidur makan, nonton tv show cina, musuh saya dikelas adalaha fauzi,adit, syihan. matakuliah faforite ngk ada , ntah lah namanya juga hidup</p>
-	  </article>
+    <article>
+        <p>
+            <strong>VILSON</strong><br>
+            Bandung, Indonesia | +62 822-8807-6094 | <a href="mailto:vilsontan262@gmail.com">vilsontan262@gmail.com</a><br>
+            <a href="https://linkedin.com/in/vilsonnn" target="_blank">linkedin.com/in/vilsonnn</a> | <a href="https://bit.ly/Portfolio_Vilson" target="_blank">Portfolio In Canva</a>
+        </p>
+        <!-- Portfolio Button After Links -->
+        <a href="portfolio.html" class="portfolio-button">Go to My Website Portfolio</a>
+        <p>
+            Information System Student at Telkom University with a passion for Data Science and Data Analyst. Solution-oriented
+            and problem solver with experience in building and maintaining data information systems management. Highly skilled
+            in critical thinking, collaboration, and technical documentation.
+        </p>
+    </article>
 </section>
 
-<article1>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<table style="width:80%">
-		<h1 style="font-size:25px;">Riwayat Pendidikan</h1>
-	  <tr>
-	    <th>No.</th>
-	    <th>Pendidikan</th>
-	    <th>Tahun</th>
-	  </tr>
-	  <tr>
-	    <td>1. </td>
-	    <td>SMA TB Lagoi</td>
-	    <td>2019-2022</td>
-	  </tr>
-	  <tr>
-	    <td>2. </td>
-	    <td>SMP TB Lagoi</td>
-	    <td>2016-2019</td>
-	  </tr>
-	</table>
+<section>
+    <article>
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Telkom University</td>
+                <td>2022 - Present</td>
+                <td>Bachelor of Information Systems, GPA: 3.96/4.00</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Tunas Bangsa High School, Kepri</td>
+                <td>2019 - 2022</td>
+                <td>Mathematics and Science, Score: 93.64/100</td>
+            </tr>
+        </table>
+    </article>
 
-	<body>
-		<br>
-		<br>
-		<h1 style="font-size:25px;">Skills</h1>
-		<p>
-			- tidur
-			<br>- bersih bersih
-			<br>- skills ngk ngapain ngapain
-		</p>
-	</article1>
+    <article>
+        <h2>Work Experience</h2>
+        <ul class="bullet-list">
+            <li><strong>Data Analyst</strong> at IBJ Group (Iramanesia)</li>
+            <li><strong>Algorithms and Programming Practicum Assistant</strong> at Daspro Laboratory</li>
+            <li><strong>Data Analyst</strong> at Soko Financial</li>
+        </ul>
+    </article>
+
+    <article>
+        <h2>Honors and Awards</h2>
+        <ul class="bullet-list">
+            <li>Bank Indonesia Scholarship Awardee</li>
+            <li>First Winner of EDM Challenge 2024</li>
+            <li>Outstanding Academic Achievement: Highest School Exam Scores</li>
+        </ul>
+    </article>
+
+    <article>
+        <h2>Organization & Committee Experience</h2>
+        <ul class="bullet-list">
+            <li>Staff of Quality Assurance in Engagement With AIESEC (EwA)</li>
+            <li>Organizing Committee Vice President of Finance For JoinAIESEC 2024</li>
+            <li>AFL Winter Peak | AIESEC In Bandung</li>
+            <li>Staff Trainer and Research EDM Laboratory</li>
+            <li>Staff Hospitality at International Office Student Buddy Club Telkom University</li>
+            <li>Staff Data Research at CCI (Central Computer Improvement)</li>
+            <li>Staff Public Relations at IT Talks (CCI)</li>
+            <li>Member of Liaison Officer Division at PKKMB Telkom University</li>
+        </ul>
+    </article>
+
+    <article>
+        <h2>Skills</h2>
+        <ul class="bullet-list">
+            <li>Analytical Thinking</li>
+            <li>Partnership Management</li>
+            <li>Event Management</li>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+        </ul>
+
+        <h2>Tools</h2>
+        <ul class="bullet-list">
+            <li>Microsoft Office, Adobe Premiere, Filmora, Canva, Python, Procreate, Google Suite, Tableau</li>
+        </ul>
+
+        <h2>Languages</h2>
+        <ul class="bullet-list">
+            <li>Indonesian (Native Proficiency)</li>
+            <li>English (Upper-Intermediate Working Proficiency)</li>
+            <li>Mandarin (Basic)</li>
+        </ul>
+    </article>
 </section>
 
 <footer>
-  <p>Thank you</p>
+    <p>Thank you for visiting my CV!</p>
 </footer>
+
+</body>
 </html>
