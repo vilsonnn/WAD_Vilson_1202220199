@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Vilson</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d4b79d;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project {
+            width: 48%;
+            background-color: #f1f1f1;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .project-title {
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project-title:hover {
+            color: #555;
+        }
+
+        .dropdown-icon {
+            font-size: 18px;
+        }
+
+        .project-description {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Portfolio Projects - Vilson</h1>
+
+<div class="project-container">
+    <!-- Project 1 -->
+    <div class="project">
+        <div class="project-title" onclick="toggleDescription('desc1')">
+            Notebook Project 1: Predicting Promotional Campaign Success
+            <span class="dropdown-icon">▼</span>
+        </div>
+        <div id="desc1" class="project-description">
+            <img src="Notebook Project 1.png" alt="Notebook Project 1">
+            <p>Proyek ini bertujuan untuk memprediksi kesuksesan kampanye promosi menggunakan Machine Learning. Berfokus pada pemrosesan data historis kampanye pemasaran dan variabel terkait seperti demografi dan perilaku konsumen, proyek ini menghasilkan model prediktif untuk meningkatkan efisiensi kampanye di masa depan.</p>
+            <p><a href="bit.ly/PredictingPromotionalCampaignMachineLearning_Vilson">Link Project</a> | <a href="bit.ly/DatasetProject1">Link Dataset</a></p>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+        <div class="project-title" onclick="toggleDescription('desc2')">
+            Notebook Project 2: Analyzing Public Opinion during Presidential Campaigns
+            <span class="dropdown-icon">▼</span>
+        </div>
+        <div id="desc2" class="project-description">
+            <img src="Notebook Project 2.png" alt="Notebook Project 2">
+            <p>Proyek ini menggunakan pendekatan Machine Learning untuk menganalisis opini publik selama kampanye presiden. Mengambil data dari media sosial, proyek ini mengidentifikasi sentimen dan pola diskusi politik yang dominan menggunakan teknik NLP dan klasifikasi teks.</p>
+            <p><a href="bit.ly/3yrmRi6">Link Project</a> | <a href="bit.ly/DataSetProject2">Link Dataset</a></p>
+        </div>
+    </div>
+
+    <!-- Project 3 (Sentinel) -->
+    <div class="project">
+        <div class="project-title" onclick="toggleDescription('desc3')">
+            Project Sentinel 1: Deteksi Komentar Bullying
+            <span class="dropdown-icon">▼</span>
+        </div>
+        <div id="desc3" class="project-description">
+            <img src="Project Sentinel 1.png" alt="Project Sentinel 1">
+            <img src="Project Sentinel 2.png" alt="Project Sentinel 2">
+            <img src="Project Sentinel 3.png" alt="Project Sentinel 3">
+            <p>Proyek ini mengembangkan sistem deteksi otomatis untuk komentar bullying di media sosial menggunakan teknik NLP dan Machine Learning. Model dilatih pada dataset yang berisi komentar berbahaya untuk mendeteksi dan mengklasifikasikan komentar bullying dengan tingkat akurasi yang tinggi.</p>
+        </div>
+    </div>
+
+    <!-- Project 4 (World Population Dashboard) -->
+    <div class="project">
+        <div class="project-title" onclick="toggleDescription('desc4')">
+            Mini Project EDM: World Population Dashboard
+            <span class="dropdown-icon">▼</span>
+        </div>
+        <div id="desc4" class="project-description">
+            <img src="MiniProject EDM.png" alt="Mini Project EDM">
+            <p>Proyek ini membuat dashboard interaktif yang menyajikan informasi tentang populasi dunia. Menggunakan data statistik, dashboard ini memberikan wawasan tentang demografi, distribusi, dan pertumbuhan populasi global.</p>
+            <p><a href="bit.ly/WorldPopulationsDashboard_Vilson">Link Dashboard</a> | <a href="bit.ly/DataSetWorldPopulations">Link Dataset</a></p>
+        </div>
+    </div>
+
+    <!-- Project 5 (Waste Management Dashboard) -->
+    <div class="project">
+        <div class="project-title" onclick="toggleDescription('desc5')">
+            Dashboard Sampah EDM: Waste Management in Indonesia
+            <span class="dropdown-icon">▼</span>
+        </div>
+        <div id="desc5" class="project-description">
+            <img src="Dashboard Sampah EDM.png" alt="Dashboard Sampah EDM">
+            <p>Proyek ini berfokus pada pembuatan dashboard untuk memvisualisasikan data manajemen sampah di Indonesia. Dashboard ini menampilkan informasi tentang distribusi sampah, metode pengelolaan, dan dampaknya terhadap lingkungan.</p>
+            <p><a href="bit.ly/WasteManagementDashboard_Vilson">Link Dashboard</a> | <a href="bit.ly/DataSetWasteIndonesia">Link Dataset</a></p>
+        </div>
+    </div>
+
+    <!-- Project 6 (Music Streaming Dashboard) -->
+    <div class="project">
+        <div class="project-title" onclick="toggleDescription('desc6')">
+            Dashboard Music Streaming 1: Iramanesia Media Platform
+            <span class="dropdown-icon">▼</span>
+        </div>
+        <div id="desc6" class="project-description">
+            <img src="Dashboard Music Streaming.png" alt="Dashboard Music Streaming">
+            <img src="Dashboard Music Streaming 2.png" alt="Dashboard Music Streaming 2">
+            <p>Proyek ini membuat dashboard untuk menganalisis tren streaming musik di Indonesia. Berfokus pada pemahaman bisnis, dashboard ini membantu mengidentifikasi pola konsumsi musik di berbagai platform media streaming.</p>
+            <p><a href="bit.ly/MusicStreamingDashboard_Vilson">Link Dashboard</a> | <a href="bit.ly/DataSetMusicStreamingIndonesian">Link Dataset</a></p>
+        </div>
+    </div>
+
+    <!-- Project 7 (Survey Inference Booklet) -->
+    <div class="project">
+        <div class="project-title" onclick="toggleDescription('desc7')">
+            Survey Booklet AFL SP 2024
+            <span class="dropdown-icon">▼</span>
+        </div>
+        <div id="desc7" class="project-description">
+            <img src="Survey Booklet AFL SP 2024.png" alt="Survey Booklet AFL SP 2024">
+            <p>Proyek ini melibatkan penyusunan booklet dan dashboard untuk menganalisis data survei dari program AFL SummerPeak 2024 oleh AIESEC di Bandung. Analisis ini dilakukan secara bertahap berdasarkan survei awal, bulanan, dan pasca acara.</p>
+            <p><a href="#">Link Booklet (On Progress)</a> | <a href="#">Link Dashboard (On Progress)</a></p>
+        </div>
+    </div>
+
+    <!-- Project 8 (Sleep Health and Lifestyle) -->
+    <div class="project">
+        <div class="project-title" onclick="toggleDescription('desc8')">
+            Dashboard Sleep Health and Lifestyles
+            <span class="dropdown-icon">▼</span>
+        </div>
+        <div id="desc8" class="project-description">
+            <img src="Dashboard Sleep Health and Lifestyles.png" alt="Dashboard Sleep Health and Lifestyles">
+            <p>Proyek ini berfokus pada analisis data kesehatan tidur dan gaya hidup. Dashboard ini memberikan wawasan tentang pola tidur, kebiasaan hidup sehat, serta hubungannya dengan produktivitas dan kesehatan mental.</p>
+            <p><a href="#">Link Dashboard (On Progress)</a> | <a href="#">Link Dataset (On Progress)</a></p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function toggleDescription(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
